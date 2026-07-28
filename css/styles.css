@@ -306,6 +306,45 @@ figure[data-img]::after, .ph[data-img]::after {}
 .ph-news    { aspect-ratio: 16 / 10; border-radius: var(--radius-sm); }
 .ph-careers { aspect-ratio: 5 / 4; border-radius: var(--radius-lg); }
 
+/* ----------------------------- Real media ------------------------------- */
+/* Live photos pulled from bhrstl.org, stored in /assets. */
+.media { width: 100%; display: block; object-fit: cover; }
+
+.hero-media, .about-media, .careers-media {
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+.hero-media { aspect-ratio: 16 / 11; }
+.about-media, .careers-media { aspect-ratio: 5 / 4; }
+.hero-media .media, .about-media .media, .careers-media .media,
+.news-media .media { height: 100%; }
+
+.news-media { position: relative; aspect-ratio: 16 / 10; overflow: hidden; }
+
+.service-slide .media-service { aspect-ratio: 4 / 3; }
+.team-card .media-portrait { aspect-ratio: 1 / 1; border-radius: var(--radius); }
+
+/* Recognition badge logos (SAMHSA / 988) sit on a white chip so they
+   stay legible in both themes. */
+.stat-logo {
+  background: #fff;
+  padding: 8px 12px;
+  height: 52px;
+  min-width: 52px;
+  width: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.stat-logo img { max-height: 36px; max-width: 130px; width: auto; object-fit: contain; }
+
+/* Brand logo lockup */
+.brand-logo { height: 38px; width: auto; display: block; }
+.footer-logo { height: 46px; }
+[data-theme="dark"] .brand-logo { filter: brightness(0) invert(1); opacity: .92; }
+
 /* ----------------------------- About ------------------------------------ */
 .about-grid {
   display: grid;

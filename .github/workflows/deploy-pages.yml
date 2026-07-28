@@ -1,0 +1,47 @@
+name: Deploy reference mockup to GitHub Pages
+
+# Publishes the static reference mockup to GitHub Pages so the dev team can
+# view it in a browser. This is a reference build, not a production release.
+
+on:
+  push:
+    branches:
+      - claude/webpage-design-mockup-uks68u
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment; newer pushes cancel in-progress runs.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          # Auto-enable Pages (build type "workflow") on first run.
+          enablement: true
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # The whole repo is a flat static site (index.html at the root).
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

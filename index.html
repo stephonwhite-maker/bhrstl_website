@@ -15,16 +15,7 @@
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
       <a href="#top" class="brand" aria-label="Behavioral Health Response home">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 40 40" width="38" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 3C11 3 4 9 4 18c0 6 4 11 10 13l6 6 6-6c6-2 10-7 10-13C36 9 29 3 20 3Z" fill="currentColor" opacity=".14"/>
-            <path d="M13 20c2.5 0 2.5-5 5-5s2.5 9 5 9 2.5-4 4-4h3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-        <span class="brand-text">
-          <strong>BHR</strong>
-          <small>Behavioral Health Response</small>
-        </span>
+        <img src="assets/logo.svg" alt="Behavioral Health Response" class="brand-logo" width="117" height="50" />
       </a>
 
       <nav class="main-nav" aria-label="Primary">
@@ -60,11 +51,8 @@
           </span>
         </a>
       </div>
-      <figure class="hero-media reveal" data-img="Outreach team at a community event (WE CRU volunteers)">
-        <div class="ph ph-hero">
-          <span class="ph-icon">👥</span>
-          <span class="ph-label">Community outreach team</span>
-        </div>
+      <figure class="hero-media reveal">
+        <img src="assets/hero.webp" alt="Behavioral Health Response team member supporting the community" class="media media-hero" width="1200" height="633" fetchpriority="high" />
       </figure>
     </section>
 
@@ -80,11 +68,8 @@
             <span class="arrow-dot" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </div>
-        <figure class="about-media reveal" data-img="Clinician taking notes during a counseling session">
-          <div class="ph ph-about">
-            <span class="ph-icon">📝</span>
-            <span class="ph-label">Counseling session</span>
-          </div>
+        <figure class="about-media reveal">
+          <img src="assets/careers.webp" alt="BHR staff engaging with the community at an outreach event" class="media media-about" width="1200" height="800" loading="lazy" />
         </figure>
       </div>
     </section>
@@ -97,12 +82,12 @@
       </div>
       <ul class="stat-cards" role="list">
         <li class="stat-card reveal">
-          <span class="stat-badge">SAMHSA</span>
+          <span class="stat-badge stat-logo"><img src="assets/samhsa.png" alt="SAMHSA" /></span>
           <h3>SAMHSA Recognition</h3>
           <p>Featured in SAMHSA's National Guidelines for crisis-care leadership.</p>
         </li>
         <li class="stat-card reveal">
-          <span class="stat-badge stat-num">988</span>
+          <span class="stat-badge stat-logo"><img src="assets/badge-988.png" alt="988 Suicide & Crisis Lifeline" /></span>
           <h3>988 Partnership</h3>
           <p>Missouri's largest 988 Suicide &amp; Crisis Lifeline provider since 1994.</p>
         </li>
@@ -135,9 +120,7 @@
         <div class="services-carousel reveal">
           <div class="carousel-track" id="carouselTrack">
             <article class="service-slide">
-              <div class="ph ph-service" data-img="Two staff members reviewing case notes at a desk">
-                <span class="ph-icon">🎧</span>
-              </div>
+              <img src="assets/service-crisis.webp" alt="A trained BHR clinician providing crisis support by phone" class="media media-service" width="1080" height="565" loading="lazy" />
               <div class="service-card">
                 <span class="service-icon" aria-hidden="true">🎧</span>
                 <h3>24/7 Crisis Hotline</h3>
@@ -146,9 +129,7 @@
               </div>
             </article>
             <article class="service-slide">
-              <div class="ph ph-service" data-img="Mobile outreach van in the community">
-                <span class="ph-icon">🚐</span>
-              </div>
+              <img src="assets/careers.webp" alt="BHR mobile outreach team meeting people in the community" class="media media-service" width="1200" height="800" loading="lazy" />
               <div class="service-card">
                 <span class="service-icon" aria-hidden="true">🚐</span>
                 <h3>Mobile Outreach</h3>
@@ -157,9 +138,7 @@
               </div>
             </article>
             <article class="service-slide">
-              <div class="ph ph-service" data-img="Group mental-health training session">
-                <span class="ph-icon">🧠</span>
-              </div>
+              <img src="assets/hero.webp" alt="A mental-health training session led by BHR staff" class="media media-service" width="1200" height="633" loading="lazy" />
               <div class="service-card">
                 <span class="service-icon" aria-hidden="true">🧠</span>
                 <h3>Mental Health Training</h3>
@@ -185,8 +164,8 @@
     <section class="section team container" id="team" aria-labelledby="team-title">
       <div class="section-eyebrow"><span>OUR TEAM</span><span class="rule"></span></div>
       <div class="team-grid">
-        <figure class="team-card reveal" data-img="Portrait of Tiffany Lacy Clark, President & CEO">
-          <div class="ph ph-portrait"><span class="ph-icon">🙂</span></div>
+        <figure class="team-card reveal">
+          <img src="assets/tiffany.jpg" alt="Tiffany Lacy Clark, President & CEO of Behavioral Health Response" class="media media-portrait" width="900" height="900" loading="lazy" />
           <figcaption>
             <strong>Tiffany Lacy Clark</strong>
             <span>President &amp; CEO</span>
@@ -239,7 +218,8 @@
       <p class="news-intro reveal">Here's where you can keep up with the latest media and podcast interviews, TV appearances, and news featuring members of our team.</p>
       <ul class="news-grid" role="list">
         <li class="news-card reveal">
-          <div class="ph ph-news" data-img="Mental-health app launch news segment">
+          <div class="news-media">
+            <img src="assets/news-1.png" alt="Mental-health app 'Response' launch coverage" class="media" width="500" height="350" loading="lazy" />
             <span class="play-badge" aria-hidden="true">▶</span>
           </div>
           <div class="news-body">
@@ -249,7 +229,8 @@
           </div>
         </li>
         <li class="news-card reveal">
-          <div class="ph ph-news" data-img="STLTV interview — The Journey to Healing">
+          <div class="news-media">
+            <img src="assets/news-2.jpg" alt="STLTV segment — BHR launches Response" class="media" width="500" height="281" loading="lazy" />
             <span class="play-badge" aria-hidden="true">▶</span>
           </div>
           <div class="news-body">
@@ -259,7 +240,8 @@
           </div>
         </li>
         <li class="news-card reveal">
-          <div class="ph ph-news" data-img="Wellness feature — 10 daily habits">
+          <div class="news-media">
+            <img src="assets/news-3.jpg" alt="Wellness feature — 10 daily habits for mental health" class="media" width="750" height="500" loading="lazy" />
             <span class="play-badge" aria-hidden="true">▶</span>
           </div>
           <div class="news-body">
@@ -297,8 +279,8 @@
             <span class="arrow-dot light" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </div>
-        <figure class="careers-media reveal" data-img="BHR staff volunteering at a community outreach tent">
-          <div class="ph ph-careers"><span class="ph-icon">🤝</span><span class="ph-label">Community outreach</span></div>
+        <figure class="careers-media reveal">
+          <img src="assets/careers.webp" alt="BHR staff volunteering at a community outreach tent" class="media media-careers" width="1200" height="800" loading="lazy" />
         </figure>
       </div>
     </section>
@@ -316,16 +298,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 40 40" width="42" height="42" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 3C11 3 4 9 4 18c0 6 4 11 10 13l6 6 6-6c6-2 10-7 10-13C36 9 29 3 20 3Z" fill="currentColor" opacity=".14"/>
-            <path d="M13 20c2.5 0 2.5-5 5-5s2.5 9 5 9 2.5-4 4-4h3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-        <div class="brand-text">
-          <strong>BHR</strong>
-          <small>Behavioral Health Response</small>
-        </div>
+        <img src="assets/logo.svg" alt="Behavioral Health Response" class="brand-logo footer-logo" width="117" height="50" />
       </div>
 
       <nav class="footer-cols" aria-label="Footer">

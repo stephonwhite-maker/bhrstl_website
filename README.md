@@ -40,15 +40,25 @@ js/main.js      # theme toggle, carousel, count-up, scroll reveal, mobile nav
 10. **Careers** — recruitment block
 11. **Footer** — 4 link columns + legal row
 
+## Live reference link
+
+A GitHub Pages deploy (`.github/workflows/deploy-pages.yml`) publishes this
+build so the team can view it in a browser without cloning:
+
+- **https://stephonwhite-maker.github.io/bhrstl_website/**
+
+This is a **reference mockup, not the production site** — Pages is used purely
+so the comp is easy to share and review.
+
 ## For the dev team
 
 - **Design tokens** live at the top of `css/styles.css` under `:root`
   (colors, radii, shadows, type, spacing). Retheme in one place.
 - **Dark mode** is fully wired via `[data-theme="dark"]` and persists to
   `localStorage`; it also respects the OS `prefers-color-scheme`.
-- **Images are placeholders.** Every image slot is a styled `.ph` block with a
-  `data-img="…"` attribute describing the intended photo, so you know exactly
-  what asset each slot expects.
+- **Real imagery** — the photos, badges (SAMHSA / 988), and the BHR logo in
+  `/assets` are pulled from the live bhrstl.org site so the mockup reflects
+  real content. Swap any file in `/assets` to update a slot.
 - **Accessibility** — semantic landmarks, ARIA on nav/carousel, visible focus
   targets, and a `prefers-reduced-motion` fallback that disables animation.
 - Breakpoints: 960px, 820px, 560px.
